@@ -1,0 +1,11 @@
+<h1>FelipeApp</h1>
+<a [routerLink]="['/currency']">Cotações</a> |
+<a [routerLink]="['/wallet']">Carteira</a> |
+<span *ngIf="wallet.diff>0" style="color:green">↑</span>
+<span *ngIf="wallet.diff<0" style="color:red">↓</span>
+<hr/>
+<router-outlet></router-outlet>
+<hr/>
+<p>Felipe Mathias Gameiro</p>
+<p >RA: 0050831921006</p>
+<a href="https://github.com/gameiro666/">GitHub</a>
